@@ -1,0 +1,69 @@
+DEBUG 2020-09-15 16:09:16,415 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-09-15 16:09:17,133 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-09-15 16:09:17,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPUnity01.Web.Host.Startup.ABPUnity01WebHostModule, ABPUnity01.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,163 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPUnity01.ABPUnity01WebCoreModule, ABPUnity01.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,164 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPUnity01.ABPUnity01ApplicationModule, ABPUnity01.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,165 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPUnity01.ABPUnity01CoreModule, ABPUnity01.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,165 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,165 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,166 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,166 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,167 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ABPUnity01.EntityFrameworkCore.ABPUnity01EntityFrameworkModule, ABPUnity01.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,167 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,167 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-09-15 16:09:17,173 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-09-15 16:09:17,351 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-15 16:09:17,351 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-15 16:09:17,351 [1    ] o.Configuration.LanguageManagementConfig - Converted ABPUnity01 (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-15 16:09:17,351 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-09-15 16:09:18,568 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: ABPUnity01.EntityFrameworkCore.ABPUnity01DbContext, ABPUnity01.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+FATAL 2020-09-15 16:09:19,492 [1    ] Abp.AbpBootstrapper                      - System.TypeLoadException: Could not load type 'Microsoft.EntityFrameworkCore.DbQuery`1' from assembly 'Microsoft.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Abp.EntityFrameworkCore.EfCoreDbContextEntityFinder.<>c.<GetEntityTypeInfos>b__0_0(PropertyInfo property)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at Abp.EntityFramework.Repositories.EfGenericRepositoryRegistrar.RegisterForDbContext(Type dbContextType, IIocManager iocManager, Type repositoryInterface, Type repositoryInterfaceWithPrimaryKey, Type repositoryImplementation, Type repositoryImplementationWithPrimaryKey)
+   at Abp.EntityFramework.Repositories.EfGenericRepositoryRegistrar.RegisterForDbContext(Type dbContextType, IIocManager iocManager, AutoRepositoryTypesAttribute defaultAutoRepositoryTypesAttribute)
+   at Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule.RegisterGenericRepositoriesAndMatchDbContexes()
+   at Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+System.TypeLoadException: Could not load type 'Microsoft.EntityFrameworkCore.DbQuery`1' from assembly 'Microsoft.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Abp.EntityFrameworkCore.EfCoreDbContextEntityFinder.<>c.<GetEntityTypeInfos>b__0_0(PropertyInfo property)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at Abp.EntityFramework.Repositories.EfGenericRepositoryRegistrar.RegisterForDbContext(Type dbContextType, IIocManager iocManager, Type repositoryInterface, Type repositoryInterfaceWithPrimaryKey, Type repositoryImplementation, Type repositoryImplementationWithPrimaryKey)
+   at Abp.EntityFramework.Repositories.EfGenericRepositoryRegistrar.RegisterForDbContext(Type dbContextType, IIocManager iocManager, AutoRepositoryTypesAttribute defaultAutoRepositoryTypesAttribute)
+   at Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule.RegisterGenericRepositoriesAndMatchDbContexes()
+   at Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+FATAL 2020-09-15 16:09:20,071 [1    ] Microsoft.AspNetCore.Hosting.WebHost     - Application startup exception
+System.TypeLoadException: Could not load type 'Microsoft.EntityFrameworkCore.DbQuery`1' from assembly 'Microsoft.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at Abp.EntityFrameworkCore.EfCoreDbContextEntityFinder.<>c.<GetEntityTypeInfos>b__0_0(PropertyInfo property)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at Abp.EntityFramework.Repositories.EfGenericRepositoryRegistrar.RegisterForDbContext(Type dbContextType, IIocManager iocManager, Type repositoryInterface, Type repositoryInterfaceWithPrimaryKey, Type repositoryImplementation, Type repositoryImplementationWithPrimaryKey)
+   at Abp.EntityFramework.Repositories.EfGenericRepositoryRegistrar.RegisterForDbContext(Type dbContextType, IIocManager iocManager, AutoRepositoryTypesAttribute defaultAutoRepositoryTypesAttribute)
+   at Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule.RegisterGenericRepositoriesAndMatchDbContexes()
+   at Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+   at Abp.AspNetCore.AbpApplicationBuilderExtensions.InitializeAbp(IApplicationBuilder app)
+   at Abp.AspNetCore.AbpApplicationBuilderExtensions.UseAbp(IApplicationBuilder app, Action`1 optionsAction)
+   at ABPUnity01.Web.Host.Startup.Startup.Configure(IApplicationBuilder app, ILoggerFactory loggerFactory) in D:\大实训2\额外资料\ABP案例\5.7.0\aspnet-core\src\ABPUnity01.Web.Host\Startup\Startup.cs:line 122
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
